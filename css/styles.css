@@ -16,6 +16,9 @@ body {
     color: #212121
     font-size: ;
 }
+.header-phone {
+color: #757575;
+}
 .studio-link {
     color: #212121;
 }
@@ -65,4 +68,22 @@ color:#ffffff;
  }
  .title-item-card {
     color: #212121;
+ }
+ .hero-title {
+    color: #ffffff;
+ }
+ .header {
+    background-color: #FFFFFF;
+ }
+ .hero-section {
+    background-color: #2F303A;
+ }
+ .main-section {
+    background-color: #ffffff;
+ }
+ .secondary-section {
+    background-color: #F5F4FA;
+ }
+ .footer {
+    background-color: #2F303A;
  }
