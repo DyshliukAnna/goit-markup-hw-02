@@ -1,0 +1,44 @@
+:root {  
+--primary-color #212121;
+--hero-color #FFFFFF;
+--secondary-color #757575;
+--accent-color #2196F3;
+
+--hero-background-color: #2F303A;
+--nav-background-col or #FFFFFF;
+--primary-background-color #FFFFFF;
+--secondary-background-color #F5F4FA;
+--footer-background-color #2F303A;
+}
+
+body {
+    font-family:'Roboto', sans-serif;
+    font-size: ;
+}
+.studio-link {
+    color: #212121;
+}
+.studio-link:hover {
+    color:#2196F3 ;
+
+}
+.studio-link:focus {
+     color: #212121;
+}
+.mail-link:hover {
+    color: #2196F3;
+}
+.mail-link:focus {
+    color: #212121;
+}
+
+.buttons {
+    color: #212121
+}
+.buttons:hover {
+    color:#FFFFFF;
+    background-color: #2196F3
+}
+.buttons:focus {
+    color: black
+}
