@@ -12,7 +12,8 @@
 }
 
 body {
-    font-family:'Roboto', sans-serif;
+    font-family:'Roboto', sans-serif ;
+    color: #212121
     font-size: ;
 }
 .studio-link {
@@ -31,14 +32,37 @@ body {
 .mail-link:focus {
     color: #212121;
 }
-
+.
+.main-button {
+color:#ffffff;
+}
+.main-button:hover {
+    color: #ffffff;
+    background-color: #2196F3
+}
+.main-button:focus {
+    color: black
+}
 .buttons {
     color: #212121
 }
-.buttons:hover {
-    color:#FFFFFF;
+.secondary-button:hover {
+    color:#ffffff;
     background-color: #2196F3
 }
-.buttons:focus {
+.secondary-button:focus {
     color: black
 }
+.descriptioт-benefits {
+    color: #757575
+}
+.discription-command {
+    color: #757575
+    }
+ 
+ .project-description {
+    color: #757575
+ }
+ .title-item-card {
+    color: #212121;
+ }
