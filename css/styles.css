@@ -1,89 +1,240 @@
 :root {  
---primary-color #212121;
---hero-color #FFFFFF;
---secondary-color #757575;
---accent-color #2196F3;
-
---hero-background-color: #2F303A;
---nav-background-col or #FFFFFF;
---primary-background-color #FFFFFF;
---secondary-background-color #F5F4FA;
---footer-background-color #2F303A;
+    --primary-color:#212121;
+    --hero-color:#ffffff;
+    --secondary-color:#757575;
+    --accent-color:#2196f3;
+    --logo-dak-color:#000000
+    --accent-background-color:#188ce8;
+    --hero-background-color:#2f303a;
+    /* --nav-background-color #ffffff; */
+    --primary-background-color:#ffffff;
+    --secondary-background-color:#f5f4fa;
+    --footer-background-color:#2f303f;
 }
 
 body {
-    font-family:'Roboto', sans-serif ;
-    color: #212121
-    font-size: ;
+    font-family: Roboto, sans-serif, Arial sans-serif; 
+    font-size: 14px;
+    color: var(--primary-color);
+    background-color: var(--hero-color); 
 }
-.header-phone {
-color: #757575;
+/* Header */
+ .header {
+     background-color: #FFFFFF;
+ }
+.logo-header {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+  }
+  .logo-light {
+      color: #FFFFFF;
+  }
+ /* Навігація */
+.nav-link {
+    color: var(--primary-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
-.studio-link {
-    color: #212121;
+.nav-link:hover {
+    color:var(--hero-color);
+    background-color:var(--accent-color);
 }
-.studio-link:hover {
-    color:#2196F3 ;
-
+.nav-link:focus {
+     color: var(--primary-color);
 }
-.studio-link:focus {
-     color: #212121;
+/* Email в header */
+.mail-link{
+    color: var(--primary-color);
 }
 .mail-link:hover {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 .mail-link:focus {
-    color: #212121;
+    color: var(--primary-color);
 }
-.
-.main-button {
-color:#ffffff;
+/* Телефон в header */
+.header-phone {
+    color: var(--secondary-color);
 }
-.main-button:hover {
-    color: #ffffff;
-    background-color: #2196F3
+.header-phone:hover {
+    color: var(--accent-color);
 }
-.main-button:focus {
-    color: black
+.header-link-focus {
+    color: var(--primary-color);
 }
-.buttons {
-    color: #212121
-}
-.secondary-button:hover {
-    color:#ffffff;
-    background-color: #2196F3
-}
-.secondary-button:focus {
-    color: black
-}
-.descriptioт-benefits {
-    color: #757575
-}
-.discription-command {
-    color: #757575
-    }
- 
- .project-description {
-    color: #757575
- }
- .title-item-card {
-    color: #212121;
+
+/* Cекція hero */
+
+ .hero-section {
+     background-color: var(--hero-background-color); 
  }
  .hero-title {
-    color: #ffffff;
+     color: var(--hero-color);
+     font-style: normal;
+     font-weight: 900;
+     font-size: 44px;
+     line-height: 60px;
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
  }
- .header {
-    background-color: #FFFFFF;
+/* Кнопка на головній сторінці */
+
+.main-button {
+color: var(--hero-color);
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(30/16)x;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+background-color: var(--accent-color);
+}
+.main-button:hover {
+    color: var(--hero-color);
+    background-color: var(--accent-background-color);
+}
+.main-button:focus {
+    color: var(--primary-color)
+}
+
+
+/* Дві головні секціі для оформлення бекграунду*/
+
+.main-section {
+    background-color: var(--hero-color);
+}
+
+/* Секція : " Наші переваги" */
+
+.title-description {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.description-benefits {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;}
+
+/* Cекція  з фотографіями секції :"Чим ми займаємось" на головній сторінці*/
+
+.main-title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/* Секція з фотографіями нашої команди */
+.secondary-title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+}
+.secondary-section {
+    background-color: var(--secondary-background-color);
+}
+.team-box {
+    background-color: var(--primary-background-color);}
+
+.team-box-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-color);
+}
+.discription-command {
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    }
+
+/* Сторінка Портфоліо. Стилізація кнопок і карток*/
+
+/* Кнопки */
+
+.secondary-button {
+    color: var(--primary-color);
+    background-color: var(--secondary-background-color);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.secondary-button:hover {
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+}
+.secondary-button:focus {
+    color: var(--primary-color);
+}
+
+/* Картки */
+ .title-item-card {
+    color: var(--primary-color);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: 0.06em;
  }
- .hero-section {
-    background-color: #2F303A;
- }
- .main-section {
-    background-color: #ffffff;
- }
- .secondary-section {
-    background-color: #F5F4FA;
- }
+  .project-description {
+      color: var(--secondary-color);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      letter-spacing: 0.03em;
+  }
+
+/* Footer */
  .footer {
-    background-color: #2F303A;
+    background-color: var(--hero-background-color);
  }
+ .logo-footer {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+ }
+.logo-dark {
+    color: var(--logo-dak-color);
+}
+.footer-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-adress {
+    color: var(--hero-color);
+}
