@@ -3,7 +3,7 @@
     --hero-color:#ffffff;
     --secondary-color:#757575;
     --accent-color:#2196f3;
-    --logo-dak-color:#000000
+    --logo-dak-color:#000000;
     --accent-background-color:#188ce8;
     --hero-background-color:#2f303a;
     /* --nav-background-color #ffffff; */
@@ -20,7 +20,7 @@ body {
 }
 /* Header */
  .header {
-     background-color: #FFFFFF;
+     background-color: var(--hero-color);
  }
 .logo-header {
     font-family: 'Raleway', sans-serif;
@@ -29,10 +29,10 @@ body {
     font-size: 26px;
     line-height: 31px;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
   }
   .logo-light {
-      color: #FFFFFF;
+      color: var(--hero-color);
   }
  /* Навігація */
 .nav-link {
