@@ -16,7 +16,9 @@ body {
     font-family: Roboto, sans-serif, Arial sans-serif; 
     font-size: 14px;
     color: var(--primary-color);
-    background-color: var(--hero-color); 
+/* Не можу  зрозуміти чому, але background з body не наслідується через var (тому довелось прописувати основний background-color
+ вручну через змінні var до кожного селектору класу, в якому він є.*/
+    background-color: var(--primary-background-color); 
 }
 /* Header */
  .header {
@@ -31,44 +33,50 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color);
   }
-  .logo-light {
-      color: var(--hero-color);
-  }
+  .logo-dark {
+      color: var(--logo-dak-color);}
+
  /* Навігація */
 .nav-link {
     color: var(--primary-color);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
 }
 .nav-link:hover {
-    color:var(--hero-color);
-    background-color: var(--accent-color);
+    color:var(--accent-color);
 }
 .nav-link:focus {
-     color: var(--primary-color);
+     color: var(--accent-color);
 }
 /* Email в header */
 .mail-link{
     color: var(--primary-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
 .mail-link:hover {
     color: var(--accent-color);
 }
 .mail-link:focus {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 /* Телефон в header */
 .header-phone {
     color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
 .header-phone:hover {
     color: var(--accent-color);
 }
-.header-link-focus {
-    color: var(--primary-color);
+.header-phone:focus {
+    color: var(--accent-color);
 }
 
 /* Cекція hero */
@@ -93,7 +101,7 @@ color: var(--hero-color);
 font-style: normal;
 font-weight: 700;
 font-size: 16px;
-line-height: calc(30/16)x;
+line-height: calc(30/16);
 display: flex;
 align-items: center;
 text-align: center;
@@ -119,15 +127,13 @@ background-color: var(--accent-color);
 
 .title-description {
     font-style: normal;
-    font-size: 14px;
-    line-height: calc(16/14) 16px;
+    line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .description-benefits {
     color: var(--secondary-color);
     font-style: normal;
-    font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;}
 
@@ -148,7 +154,6 @@ background-color: var(--accent-color);
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--primary-color);
 }
 .secondary-section {
     background-color: var(--secondary-background-color);
@@ -163,8 +168,6 @@ background-color: var(--accent-color);
     line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: var(--primary-color);
 }
 .discription-command {
     color: var(--secondary-color);
@@ -200,7 +203,7 @@ background-color: var(--accent-color);
 
 /* Картки */
  .title-item-card {
-    color: var(--primary-color);
+        color: var(--primary-color);
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
@@ -229,12 +232,33 @@ background-color: var(--accent-color);
         letter-spacing: 0.03em;
         color: var(--accent-color);
  }
-.logo-dark {
-    color: var(--logo-dak-color);
-}
+.logo-light {
+       color: var(--hero-color);}
+
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+}
+.footer-contacts:hover {
+    color: var(--accent-color);
+}
+.footer-contacts:focus {
+color: var(--accent-color)
 }
 .footer-adress {
     color: var(--hero-color);
+    font-style: normal;
+        line-height: 24px;
+        /* or 171% */
+    
+        letter-spacing: 0.03em;
+}
+.footer-adress:hover {
+    color: var(--accent-color);
+}
+
+.footer-adress:focus {
+    color: var(--accent-color);
 }
