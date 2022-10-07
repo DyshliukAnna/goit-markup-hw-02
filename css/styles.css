@@ -6,43 +6,49 @@
     --logo-dak-color:#000000;
     --accent-background-color:#188ce8;
     --hero-background-color:#2f303a;
-    /* --nav-background-color #ffffff; */
     --primary-background-color:#ffffff;
     --secondary-background-color:#f5f4fa;
     --footer-background-color:#2f303f;
 }
 
 body {
-    font-family: Roboto, sans-serif, Arial sans-serif; 
-    font-size: 14px;
     color: var(--primary-color);
-/* Не можу  зрозуміти чому, але background з body не наслідується через var (тому довелось прописувати основний background-color
- вручну через змінні var до кожного селектору класу, в якому він є.*/
-    background-color: var(--primary-background-color); 
+    background-color: var(--primary-background-color);
+
+    font-family: Roboto, sans-serif; 
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
 }
 /* Header */
- .header {
-     background-color: var(--hero-color);
- }
+
+.list{
+    list-style: none;
+}
+
 .logo-header {
+    color: var(--accent-color);
+    
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31/26);
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
+
+    text-decoration: none;
+    
   }
-  .logo-dark {
-      color: var(--logo-dak-color);}
+.logo-dark {
+    color: var(--logo-dak-color);}
 
  /* Навігація */
+
 .nav-link {
     color: var(--primary-color);
-    font-style: normal;
+
     font-weight: 500;
-    line-height: calc(16/14);
     letter-spacing: 0.02em;
+
+    text-decoration: none;
 }
 .nav-link:hover {
     color:var(--accent-color);
@@ -51,12 +57,14 @@ body {
      color: var(--accent-color);
 }
 /* Email в header */
+
 .mail-link{
     color: var(--primary-color);
-    font-style: normal;
+
     font-weight: 500;
-    line-height: calc(16/14);
     letter-spacing: 0.02em;
+
+    text-decoration: none;
 }
 .mail-link:hover {
     color: var(--accent-color);
@@ -65,12 +73,14 @@ body {
     color: var(--accent-color);
 }
 /* Телефон в header */
+
 .header-phone {
     color: var(--secondary-color);
-    font-style: normal;
+
     font-weight: 500;
-    line-height: calc(16/14);
     letter-spacing: 0.02em;
+
+    text-decoration: none;
 }
 .header-phone:hover {
     color: var(--accent-color);
@@ -81,12 +91,12 @@ body {
 
 /* Cекція hero */
 
- .hero-section {
+.hero-section {
      background-color: var(--hero-background-color); 
  }
- .hero-title {
+.hero-title {
      color: var(--hero-color);
-     font-style: normal;
+
      font-weight: 900;
      font-size: 44px;
      line-height: calc(60/44);
@@ -97,25 +107,27 @@ body {
 /* Кнопка на головній сторінці */
 
 .main-button {
-color: var(--hero-color);
-font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: calc(30/16);
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-background-color: var(--accent-color);
+    color: var(--hero-color);
+    background-color: var(--accent-color);
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
 }
 .main-button:hover {
     color: var(--hero-color);
     background-color: var(--accent-background-color);
 }
 .main-button:focus {
-    color: var(--primary-color)
+    color: var(--primary-color);
 }
-
 
 /* Дві головні секціі для оформлення бекграунду*/
 
@@ -123,37 +135,28 @@ background-color: var(--accent-color);
     background-color: var(--hero-color);
 }
 
-/* Секція : " Наші переваги" */
+/* Секція : "Наші переваги" */
 
 .title-description {
-    font-style: normal;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .description-benefits {
     color: var(--secondary-color);
-    font-style: normal;
-    line-height: calc(24/14);
-    letter-spacing: 0.03em;}
 
-/* Cекція  з фотографіями секції :"Чим ми займаємось" на головній сторінці*/
+    line-height: calc(24/14);
+}
+/* Cерія фотографій з секції: "Чим ми займаємось" на головній сторінці*/
 
 .main-title {
-    font-style: normal;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
-
 /* Секція з фотографіями нашої команди */
 .secondary-title {
-    font-style: normal;
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .secondary-section {
     background-color: var(--secondary-background-color);
@@ -162,36 +165,40 @@ background-color: var(--accent-color);
     background-color: var(--primary-background-color);}
 
 .team-box-title {
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 .discription-command {
     color: var(--secondary-color);
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 16px;
     line-height: calc(19/16);
     text-align: center;
-    letter-spacing: 0.03em;
     }
 
 /* Сторінка Портфоліо. Стилізація кнопок і карток*/
 
 /* Кнопки */
 
+.main-section-portfolio{
+
+    background-color: var(--primary-background-color);
+    text-decoration: none;
+}
+
 .secondary-button {
     color: var(--primary-color);
     background-color: var(--secondary-background-color);
-    font-style: normal;
+
+    font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
     text-align: center;
-    letter-spacing: 0.03em;
+
+    cursor: pointer;
 }
 .secondary-button:hover {
     color: var(--hero-color);
@@ -202,58 +209,63 @@ background-color: var(--accent-color);
 }
 
 /* Картки */
- .title-item-card {
-        color: var(--primary-color);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: calc(36/18);
-        letter-spacing: 0.06em;
+.title-item-card {
+    color: var(--primary-color);
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    
  }
-  .project-description {
-      color: var(--secondary-color);
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: calc(30/16);
-      letter-spacing: 0.03em;
+.project-description {
+    color: var(--secondary-color);
+
+    font-size: 16px;
+    line-height: calc(30/16);
+
+    text-decoration: none;
+
+  }
+.text-decoration-portfolio {
+    text-decoration: none;
   }
 
 /* Footer */
- .footer {
+.footer {
     background-color: var(--hero-background-color);
  }
- .logo-footer {
-        font-family: 'Raleway', sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
-        letter-spacing: 0.03em;
-        color: var(--accent-color);
+.logo-footer {
+    color: var(--accent-color);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+
+    text-decoration: none;
  }
 .logo-light {
-       color: var(--hero-color);}
+    color: var(--hero-color);}
 
 .footer-contacts {
     color: rgba(255, 255, 255, 0.6);
-    font-style: normal;
     line-height: calc(24/14);
-    letter-spacing: 0.03em;
+
+    text-decoration: none;
 }
 .footer-contacts:hover {
     color: var(--accent-color);
 }
 .footer-contacts:focus {
-color: var(--accent-color)
+    color: var(--accent-color)
 }
 .footer-adress {
     color: var(--hero-color);
-    font-style: normal;
-        line-height: 24px;
-        /* or 171% */
-    
-        letter-spacing: 0.03em;
+    line-height: 24px;
+
+    text-decoration: none;
 }
 .footer-adress:hover {
     color: var(--accent-color);
